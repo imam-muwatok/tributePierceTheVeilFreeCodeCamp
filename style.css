@@ -20,6 +20,12 @@ nav {
   z-index: 10;
 }
 
+nav p {
+  color: #eee;
+  text-align: center;
+
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -47,7 +53,7 @@ nav ul li a:hover {
 #main h1 {
   font-family: Lemonada, sans-serif;
   font-size: 5vw;
-  margin: 0;
+  margin-top: 50px;
   padding: 0;
   line-height: 1em;
 }
@@ -72,10 +78,10 @@ nav ul li a:hover {
   font-size: .7em;
 }
 
-#tribute-info {
+/* #tribute-info {
   width: 800px;
   margin: 50px auto;
-}
+} */
 
 #tribute-info h2 {
   text-align: center;
@@ -145,6 +151,7 @@ nav ul li a:hover {
 }
 
 #follow {
+  width: 100%;
   text-align:center;
   background-color: black;
   padding:5px 0;
@@ -170,4 +177,8 @@ nav ul li a:hover {
   color: white;
 }
 
-
+@media screen and (max-width: 588px) {
+  nav ul{
+    display: none;
+  }
+}
